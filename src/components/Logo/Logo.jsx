@@ -1,4 +1,3 @@
-import './Logo.scss'
 import logo from '../../assets/icons/logo.svg'
 const Logo = () => {
   return (
