@@ -1,0 +1,48 @@
+$btn-color: #70CB0E;
+$bg-gradient: radial-gradient(80.03% 152.54% at 40.10% 50.00%, #B5E6FF 0%, #59C3FB 100%);
+
+.top {
+  height: 700px;
+  background: $bg-gradient;
+  background-repeat: no-repeat;
+
+  .top__container {
+    max-width: 1160px;
+    height: 100%;
+    margin: 0 auto;
+    background: url(../../assets/img/panda.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+
+  .top__content {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .top__title {
+    max-width: 570px;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 2.1px;
+  }
+
+  .top__button {
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    width: 233px;
+    border-radius: 30px;
+    background: $btn-color;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}

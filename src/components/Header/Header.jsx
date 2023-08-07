@@ -6,7 +6,7 @@ const Header = () => {
       <Logo/>
       <nav className="header__nav">
         <ul className="header__ul">
-          <li className="header__li"><a href="#" className="header__link">About</a></li>
+          <li className="header__li"><a href="#" className="header__link header__link_active">About</a></li>
           <li className="header__li"><a href="#" className="header__link">Map</a></li>
           <li className="header__li"><a href="#" className="header__link">Zoos</a></li>
           <li className="header__li"><a href="#" className="header__link">Contact us</a></li>
