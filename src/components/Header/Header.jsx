@@ -1,4 +1,4 @@
-import Logo from "../__logo/Logo"
+import Logo from "../Logo/Logo"
 import './Header.scss'
 const Header = () => {
   return (
