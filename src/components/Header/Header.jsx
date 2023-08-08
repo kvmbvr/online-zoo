@@ -1,20 +1,31 @@
-import Logo from "../Logo/Logo"
-import styles from './Header.module.scss'
+import Logo from "../Logo/Logo";
+import styles from "./Header.module.scss";
+import { useLocation } from 'react-router-dom';
+
+
 const Header = () => {
+  const menu = ["About", "Map", "Zoos", "Contact us", "Design"];
+
   return (
     <header className={styles.header}>
-      <Logo/>
+      <Logo />
       <nav className={styles.header__nav}>
         <ul className={styles.header__ul}>
-          <li className={styles.header__li}><a href="#" className={`${styles.header__link} ${styles.header__link_active}`}>About</a></li>
-          <li className={styles.header__li}><a href="#" className={styles.header__link}>Map</a></li>
-          <li className={styles.header__li}><a href="#" className={styles.header__link}>Zoos</a></li>
-          <li className={styles.header__li}><a href="#" className={styles.header__link}>Contact us</a></li>
-          <li className={styles.header__li}><a href="#" className={styles.header__link}>Design</a></li>
+          {menu.map((item) => (
+            <li key={item} className={styles.header__li}>
+              <a
+                href="#"
+                //need to chenge hardcode expression below to dynamic: link should be active if current page route is matching
+                className={`${styles.header__link} ${item === 'About' ? styles.header__link_active : ''}`}
+              >
+                {item}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
