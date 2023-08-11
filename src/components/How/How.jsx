@@ -10,12 +10,14 @@ const How = () => {
     <section className={styles.how}>
       <div className={styles.how__container}>
         <h2 className={styles.how__title}>How it works</h2>
-        <div className={styles.how__images}>
-          <img src={howEagle} alt="img" className={styles.how__image} />
-          <img src={howTiger} alt="img" className={styles.how__image} />
-          <img src={howPanda} alt="img" className={styles.how__image} />
-          <img src={howMonkey} alt="img" className={styles.how__image} />
-          <img src={howElephant} alt="img" className={styles.how__image} />
+        <div className={styles.how__images_container}>
+          <div className={styles.how__images}>
+            <img src={howEagle} alt="img" className={styles.how__image} />
+            <img src={howTiger} alt="img" className={styles.how__image} />
+            <img src={howPanda} alt="img" className={styles.how__image} />
+            <img src={howMonkey} alt="img" className={styles.how__image} />
+            <img src={howElephant} alt="img" className={styles.how__image} />
+          </div>
         </div>
         <p className={styles.how__text}>
           The application Оnline zoo will allow you to watch zoos' and nature

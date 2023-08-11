@@ -1,4 +1,5 @@
 import Logo from "../Logo/Logo";
+import BurgerIcon from "../BurgerIcon/BurgerIcon";
 import styles from "./Header.module.scss";
 import { useLocation } from 'react-router-dom';
 
@@ -10,6 +11,7 @@ const Header = () => {
     <header className={styles.header}>
       <Logo />
       <nav className={styles.header__nav}>
+        <BurgerIcon />
         <ul className={styles.header__ul}>
           {menu.map((item) => (
             <li key={item} className={styles.header__li}>

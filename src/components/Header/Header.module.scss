@@ -7,23 +7,27 @@ $active-link-color: #70CB0E;
   height: 80px;
   gap: 60px;
   align-items: center;
-
-  .header__ul {
-    display: flex;
-    gap: 35px;
-  }
-
-  .header__link {
-    font-size: 15px;
-    font-weight: 500;
-  }
-
-  .header__link_active {
-    text-shadow: -0.7px -0.7px 0 $active-link-color, 0.7px -0.7px 0 $active-link-color, -0.7px 0.7px 0 $active-link-color, 0.7px 0.7px 0 $active-link-color;
+  @media (max-width: 580px) {
+    justify-content: space-between;
   }
 }
 
+.header__ul {
+  display: flex;
+  gap: 35px;
+  @media (max-width: 580px) {
+    display: none;
+  }
+}
 
+.header__link {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.header__link_active {
+  text-shadow: -0.7px -0.7px 0 $active-link-color, 0.7px -0.7px 0 $active-link-color, -0.7px 0.7px 0 $active-link-color, 0.7px 0.7px 0 $active-link-color;
+}
 
 
 

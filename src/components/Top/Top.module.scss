@@ -1,5 +1,9 @@
-$btn-color: #70CB0E;
-$bg-gradient: radial-gradient(80.03% 152.54% at 40.10% 50.00%, #B5E6FF 0%, #59C3FB 100%);
+$btn-color: #70cb0e;
+$bg-gradient: radial-gradient(
+  80.03% 152.54% at 40.1% 50%,
+  #b5e6ff 0%,
+  #59c3fb 100%
+);
 
 .top {
   height: 700px;
@@ -13,36 +17,59 @@ $bg-gradient: radial-gradient(80.03% 152.54% at 40.10% 50.00%, #B5E6FF 0%, #59C3
     background: url(../../assets/img/panda.png);
     background-repeat: no-repeat;
     background-position: right bottom;
+    padding: 0 20px;
+    @media (max-width: 640px) {
+      background-position: 90px bottom;
+      padding: 0 10px;
+    }
+
+    @media (max-width: 400px) {
+      background-position: 0 bottom;
+    }
+  }
+  
+}
+
+
+.top__content {
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  @media (max-width: 640px) {
+    padding-top: 70px;
+  }
+}
+
+.top__title {
+  max-width: 570px;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 2.1px;
+  @media (max-width: 940px) {
+    font-size: 50px;
+    max-width: 415px;
+    letter-spacing: 1.5px;
   }
 
-  .top__content {
-    padding-top: 130px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  @media (max-width: 320px) {
+    max-width: 220px;
   }
+}
 
-  .top__title {
-    max-width: 570px;
-    font-size: 70px;
-    font-weight: 900;
-    line-height: 120%;
-    letter-spacing: 2.1px;
-  }
-
-  .top__button {
-    font-size: 18px;
-    font-weight: 400;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 0;
-    width: 233px;
-    border-radius: 30px;
-    background: $btn-color;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
+.top__button {
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  width: 233px;
+  border-radius: 30px;
+  background: $btn-color;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
