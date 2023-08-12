@@ -2,8 +2,6 @@ $img-border-color: #fff;
 
 .how {
   padding: 100px 0;
-  
- 
 }
 
 .how__container {
@@ -37,32 +35,32 @@ $img-border-color: #fff;
   object-fit: cover;
   border: 1px solid $img-border-color;
 
-  .how__image:nth-child(1) {
+  &:nth-child(1) {
     width: 250px;
     height: 350px;
     margin-right: -20px;
   }
   
-  .how__image:nth-child(2) {
+  &:nth-child(2) {
     width: 300px;
     height: 400px;
     margin-right: -20px;
   }
   
-  .how__image:nth-child(3) {
+  &:nth-child(3) {
     width: 350px;
     height: 450px;
     margin-right: -20px;
   }
   
-  .how__image:nth-child(4) {
+  &:nth-child(4) {
     width: 300px;
     height: 400px;
     z-index: -1;
     margin-right: -20px;
   }
   
-  .how__image:nth-child(5) {
+  &:nth-child(5) {
     width: 250px;
     height: 350px;
     z-index: -2;
