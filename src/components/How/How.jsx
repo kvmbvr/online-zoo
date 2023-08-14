@@ -12,9 +12,9 @@ const How = () => {
         <h2 className={styles.how__title}>How it works</h2>
         <div className={styles.how__images_container}>
           <div className={styles.how__images}>
-            <img src={howEagle} alt="img" className={styles.how__image} />
-            <img src={howTiger} alt="img" className={styles.how__image} />
             <img src={howPanda} alt="img" className={styles.how__image} />
+            <img src={howTiger} alt="img" className={styles.how__image} />
+            <img src={howEagle} alt="img" className={styles.how__image} />
             <img src={howMonkey} alt="img" className={styles.how__image} />
             <img src={howElephant} alt="img" className={styles.how__image} />
           </div>
@@ -30,7 +30,7 @@ const How = () => {
           you watch and you want to please it with a delicious treat, you can
           pay a donation and the animal will receive a surprise from you during
           feeding hours. We want to thank you for helping the animals and give
-          you discount coupons from our partners.
+          you <a className={styles.how__link} href="#">discount coupons</a> from our partners.
         </p>
       </div>
     </section>

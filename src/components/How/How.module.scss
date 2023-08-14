@@ -1,4 +1,5 @@
 $img-border-color: #fff;
+$link-color: #267BDE;
 
 .how {
   padding: 100px 0;
@@ -7,26 +8,30 @@ $img-border-color: #fff;
 .how__container {
   max-width: 1370px;
   margin: 0 auto;
-  
 }
 
 .how__title {
   text-align: center;
+  font-size: 40px;
+  font-weight: 500;
 }
 
 .how__images_container {
   position: relative;
-  background: url(../../assets/img/how-bg-top.png), url(../../assets/img/how-bg-bottom.png);
+  background: url(../../assets/img/how-bg-top.png),
+    url(../../assets/img/how-bg-bottom.png);
   background-repeat: no-repeat;
   background-position: 490px 30px, 0px 230px;
   z-index: -5;
+  padding: 80px 0;
 }
 
 .how__images {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
   align-items: center;
   padding: 80px 0;
+  position: relative;
+  height: 450px;
 }
 
 .how__image {
@@ -34,36 +39,45 @@ $img-border-color: #fff;
   height: auto;
   object-fit: cover;
   border: 1px solid $img-border-color;
+  position: absolute;
 
   &:nth-child(1) {
-    width: 250px;
-    height: 350px;
-    margin-right: -20px;
-  }
-  
-  &:nth-child(2) {
-    width: 300px;
-    height: 400px;
-    margin-right: -20px;
-  }
-  
-  &:nth-child(3) {
     width: 350px;
     height: 450px;
-    margin-right: -20px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  
+
+   &:nth-child(2) {
+    width: 300px;
+    height: 400px;
+    left: 17%;
+    z-index: -1;
+  }
+
+  &:nth-child(3) {
+    width: 250px;
+    height: 350px;
+    left: 0;
+    z-index: -2;
+  }
+
   &:nth-child(4) {
     width: 300px;
     height: 400px;
     z-index: -1;
-    margin-right: -20px;
+    right: 17%;
   }
-  
+
   &:nth-child(5) {
     width: 250px;
     height: 350px;
     z-index: -2;
+    right: 0;
+  }
+
+  @media (max-width: 1390px) {
   }
 }
 
@@ -74,4 +88,9 @@ $img-border-color: #fff;
   font-size: 16px;
   font-weight: 400;
   line-height: 130%;
+
+  .how__link {
+    text-decoration: underline;
+    color: $link-color;
+  }
 }
