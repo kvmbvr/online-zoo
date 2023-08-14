@@ -23,7 +23,17 @@ $link-color: #267BDE;
   background-repeat: no-repeat;
   background-position: 490px 30px, 0px 230px;
   z-index: -5;
-  padding: 80px 0;
+  padding: 80px 15px;
+
+  @media (max-width: 640px) {
+    padding: 80px 0;
+    overflow: hidden;
+  }
+
+  @media (max-width: 380px) {
+    padding: 80px 10px;
+    background-position: -30px 30px, -520px 226px;
+  }
 }
 
 .how__images {
@@ -77,14 +87,108 @@ $link-color: #267BDE;
     right: 0;
   }
 
-  @media (max-width: 1390px) {
+  @media (max-width: 980px) {
+    &:nth-child(4) {
+      right: 0;
+    }
+
+    &:nth-child(2) {
+      left: 0;
+    }
   }
+
+  @media (max-width: 640px) {
+    &:nth-child(4) {
+      right: -85px;
+    }
+
+    &:nth-child(2) {
+      left: -85px;
+    }
+  }  
+
+  @media (max-width: 380px) {
+    &:nth-child(1) {
+      width: 140px;
+      height: 215px;
+      bottom: 35px;
+      left: 40px;
+      top: auto;
+      transform: none;
+    }
+  
+     &:nth-child(2) {
+      width: 160px;
+      height: 215px;
+      top: 0;
+      left: 20px;
+    }
+  
+    &:nth-child(3) {
+      width: 140px;
+      height: 215px;
+      top: 35px;
+      right: 40px;
+      left: auto;
+      z-index: 0;
+    }
+  
+    &:nth-child(4) {
+      width: 160px;
+      height: 215px;
+      bottom: 0;
+      right: 20px;
+    }
+
+    &:nth-child(5) {
+      display: none;
+    }
+  }  
+
+  @media (max-width: 336px) {
+    &:nth-child(1) {
+      width: 140px;
+      height: 215px;
+      bottom: 35px;
+      left: 20px;
+      top: auto;
+      transform: none;
+    }
+  
+     &:nth-child(2) {
+      width: 160px;
+      height: 215px;
+      top: 0;
+      left: 0;
+    }
+  
+    &:nth-child(3) {
+      width: 140px;
+      height: 215px;
+      top: 35px;
+      right: 20px;
+      left: auto;
+      z-index: 0;
+    }
+  
+    &:nth-child(4) {
+      width: 160px;
+      height: 215px;
+      bottom: 0;
+      right: 0;
+    }
+
+    &:nth-child(5) {
+      display: none;
+    }
+  }  
 }
 
 .how__text {
   margin: 0 auto;
   text-align: center;
-  max-width: 933px;
+  max-width: 963px;
+  padding: 0 15px;
   font-size: 16px;
   font-weight: 400;
   line-height: 130%;
@@ -92,5 +196,10 @@ $link-color: #267BDE;
   .how__link {
     text-decoration: underline;
     color: $link-color;
+  }
+
+  @media (max-width: 640px) {
+    max-width: 555px;
+    padding: 0 10px;
   }
 }
