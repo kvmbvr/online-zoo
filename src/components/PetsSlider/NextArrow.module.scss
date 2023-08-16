@@ -1,0 +1,8 @@
+.next {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  transform: translateY(50%) rotate(180deg);
+  z-index: 1;
+  cursor: pointer;
+}
