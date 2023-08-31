@@ -3,53 +3,78 @@ $link-color: #267BDE;
 
 .how {
   padding: 100px 0;
-}
 
-.how__container {
-  max-width: 1370px;
-  margin: 0 auto;
-}
-
-.how__title {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 500;
-}
-
-.how__images_container {
-  position: relative;
-  background: url(../../assets/img/how-bg-top.png),
-    url(../../assets/img/how-bg-bottom.png);
-  background-repeat: no-repeat;
-  background-position: 490px 30px, 0px 230px;
-  z-index: -5;
-  padding: 80px 15px;
-
-  @media (max-width: 640px) {
+  &__container {
+    max-width: 1370px;
+    margin: 0 auto;
+  }
+  
+  &__slide {
+    max-width: 320px;
+  }
+  
+  &__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  
+  &__swiper-container {
+    position: relative;
+    background: url(../../assets/img/how-bg-top.png),
+      url(../../assets/img/how-bg-bottom.png);
+    background-repeat: no-repeat;
+    background-position: 490px 30px, 0px 230px;
+    padding: 80px 15px;
+  
+    @media (max-width: 640px) {
+      padding: 80px 0;
+      overflow: hidden;
+    }
+  
+    @media (max-width: 380px) {
+      padding: 80px 10px;
+      background-position: -30px 30px, -520px 226px;
+    }
+  }
+  
+  &__swiper {
+    z-index: 10;
+  }
+  
+  &__images {
+    display: flex;
+    align-items: center;
     padding: 80px 0;
-    overflow: hidden;
+    position: relative;
+    height: 450px;
+  }
+  
+  &__text {
+    max-width: 880px;
+    padding: 0 50px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
   }
 
-  @media (max-width: 380px) {
-    padding: 80px 10px;
-    background-position: -30px 30px, -520px 226px;
+  &__link {
+    color: $link-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    text-decoration-line: underline;
   }
 }
 
-.how__images {
-  display: flex;
-  align-items: center;
-  padding: 80px 0;
-  position: relative;
-  height: 450px;
-}
 
-.how__image {
+/* .how__image {
   width: 100%;
   height: auto;
   object-fit: cover;
   border: 1px solid $img-border-color;
-  position: absolute;
 
   &:nth-child(1) {
     width: 350px;
@@ -203,3 +228,4 @@ $link-color: #267BDE;
     padding: 0 10px;
   }
 }
+ */

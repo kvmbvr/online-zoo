@@ -1,0 +1,16 @@
+$btn-color: #70cb0e;
+
+.button {
+  font-size: 18px;
+  font-weight: 400;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  border-radius: 30px;
+  background: $btn-color;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

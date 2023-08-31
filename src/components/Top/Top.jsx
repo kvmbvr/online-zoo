@@ -1,6 +1,8 @@
+import Button from "../Button/Button"
 import Header from "../Header/Header"
 import styles from './Top.module.scss'
 import playIcon from '../../assets/icons/play.svg'
+
 
 const Top = () => {
   return (
@@ -12,10 +14,7 @@ const Top = () => {
             Watch your
             favorite animal ONLINE
           </h2>
-          <button className={styles.top__button}>
-            <img src={playIcon} alt="playIcon" />
-            Play
-          </button>
+          <Button icon={playIcon} text={'Play'}/>
         </div>
       </div>
     </section>
