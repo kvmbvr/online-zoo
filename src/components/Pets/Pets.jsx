@@ -18,29 +18,31 @@ const Pets = () => {
     <section className={styles.pets}>
       <div className={styles.pets__container}>
         <h2 className={styles.pets__title}>Pets in zoo</h2>
-          <Swiper
-            slidesPerView={4}
-            spaceBetween={20}
-            navigation={{
-              prevEl: ".button-prev",
-              nextEl: ".button-next",
-            }}
-            grid={{
-              rows: 2,
-              fill: "row",
-            }}
-            rewind={true}
-            modules={[Grid, Navigation]}
-            className={styles.pets__swiper}
-          >
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={20}
+          navigation={{
+            prevEl: ".button-prev",
+            nextEl: ".button-next",
+          }}
+          grid={{
+            rows: 2,
+            fill: "row",
+          }}
+          rewind={true}
+          modules={[Grid, Navigation]}
+          className={styles.pets__swiper}
+        >
+          {data.map((item, index) => (
+            <SwiperSlide key={index} className={styles.pets__slide}>
+              <Card name={item.name} image={item.image} />
+            </SwiperSlide>
+          ))}
+          <div className={styles.pets__buttons}>
             <ButtonPrev className={styles["pets__button-prev"]} />
-            {data.map((item, index) => (
-              <SwiperSlide key={index} className={styles.pets__slide}>
-                <Card name={item.name} image={item.image} />
-              </SwiperSlide>
-            ))}
             <ButtonNext className={styles["pets__button-next"]} />
-          </Swiper>
+          </div>
+        </Swiper>
       </div>
     </section>
   );
