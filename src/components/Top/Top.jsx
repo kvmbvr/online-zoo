@@ -14,7 +14,7 @@ const Top = () => {
             Watch your
             favorite animal ONLINE
           </h2>
-          <Button icon={playIcon} text={'Play'}/>
+          <Button size={235} icon={playIcon} text={'Play'}/>
         </div>
       </div>
     </section>

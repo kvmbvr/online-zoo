@@ -1,0 +1,52 @@
+.pay {
+  &__container {
+    max-width: 1050px;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 100px 0;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: url("../../assets/img/pay-arrows.png");
+    background-repeat: no-repeat;
+    background-position: 210px -200px;
+    z-index: 5;
+    overflow: visible;
+    padding: 20px 0;
+  }
+
+  &__item {
+    text-align: center;
+    overflow: visible;
+    max-width: 320px;
+
+    &-image {
+      width: 210px;
+      height: 195px;
+      margin: 0 auto;
+      overflow: visible;
+      background: url("../../assets/icons/pay-bg.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-text {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
