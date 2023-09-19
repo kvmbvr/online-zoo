@@ -1,0 +1,50 @@
+.footer {
+  background-color: var(--Style_4, #dff5b0);
+  background-image: url("../../assets/img/footer-bg.png");
+  background-position: 0 0;
+
+  &__container {
+    max-width: 1160px;
+    padding: 80px 20px 20px;
+    margin: 0 auto;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 120px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__link {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__bottom {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
