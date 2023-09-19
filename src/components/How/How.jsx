@@ -17,7 +17,7 @@ const How = () => {
     <section className={styles.how}>
       <div className={styles.how__container}>
         <h2 className={styles.how__title}>How it works</h2>
-        <div className={styles['how__swiper-container']}>
+        <div className={styles["how__swiper-container"]}>
           <Swiper
             className={styles.how__swiper}
             effect={"coverflow"}
@@ -65,13 +65,6 @@ const How = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        {/* <div className={styles.how__images}>
-            <img src={howPanda} alt="img" className={styles.how__image} />
-            <img src={howTiger} alt="img" className={styles.how__image} />
-            <img src={howEagle} alt="img" className={styles.how__image} />
-            <img src={howMonkey} alt="img" className={styles.how__image} />
-            <img src={howElephant} alt="img" className={styles.how__image} />
-          </div> */}
         <p className={styles.how__text}>
           The application Оnline zoo will allow you to watch zoos' and nature
           reserves' inhabitants in live. Currently, under video-surveillance are

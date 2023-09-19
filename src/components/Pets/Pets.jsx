@@ -20,6 +20,8 @@ const Pets = () => {
       <div className={styles.pets__container}>
         <h2 className={styles.pets__title}>Pets in zoo</h2>
         <div className={styles["pets__swiper-container"]}>
+          <ButtonPrev className={styles["pets__button-prev"]} />
+
           <Swiper
             slidesPerView={4}
             spaceBetween={20}
@@ -40,11 +42,8 @@ const Pets = () => {
                 <Card name={item.name} image={item.image} />
               </SwiperSlide>
             ))}
-            <div className={styles.pets__buttons}>
-              <ButtonPrev className={styles["pets__button-prev"]} />
-              <ButtonNext className={styles["pets__button-next"]} />
-            </div>
           </Swiper>
+          <ButtonNext className={styles["pets__button-next"]} />
         </div>
 
         <div className={styles.pets__button}>
