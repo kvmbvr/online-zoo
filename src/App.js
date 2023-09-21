@@ -1,19 +1,17 @@
-import Top from "./components/Top/Top"
-import How from "./components/How/How"
-import Pets from "./components/Pets/Pets.jsx"
-import Pay from "./components/Pay/Pay"
-import Testimonials from "./components/Testimonials/Testimonials"
-import Footer from "./components/Footer/Footer"
+import Main from './pages/Main'
+import Map from './pages/Map'
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 const App = () => {
   return (
     <>
-      <Top />
-      <How />
-      <Pets />
-      <Pay />
-      <Testimonials />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path='/' Component={Main}/>
+          <Route path='/map' Component={Map}/>
+        </Routes>
+      </Router>
     </>
   )
 }
