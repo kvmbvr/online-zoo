@@ -1,7 +1,7 @@
 import Logo from "../Logo/Logo";
 import BurgerIcon from "../BurgerIcon/BurgerIcon";
 import styles from "./Header.module.scss";
-import { useLocation, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
